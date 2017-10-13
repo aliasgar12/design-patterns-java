@@ -16,7 +16,7 @@ public class Singleton {
 	}
 	
 	public String getDescription(){
-		return "I am a classic (thread safe) singleton - " + getName() ;
+		return "I am a classic singleton - " + getName() ;
 	}
 
 	public String getName() {
