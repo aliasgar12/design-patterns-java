@@ -24,6 +24,20 @@ public class SingletonClient {
 		SingletonThreadSafe singleton2 = SingletonThreadSafe.getInstance();
 		System.out.println(singleton2.getDescription());
 		
+		// Thread safe singleton
+		SingletonStatic singletonStaticA= SingletonStatic.getInstance();
+		singletonStaticA.setName("Static Singleton A");
+		System.out.println(singletonStaticA.getDescription());
+
+		// Another thread safe singleton
+		SingletonStatic singletonStaticB = SingletonStatic.getInstance();
+		System.out.println(singletonStaticB.getDescription());
+		
+		// Changing values for singleton B and getting description for Singleton A
+		singletonStaticB.setName("Singleton B");
+		System.out.println(singletonStaticA.getDescription());
+
+		
 	}
 
 }
