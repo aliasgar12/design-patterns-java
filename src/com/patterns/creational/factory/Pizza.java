@@ -36,6 +36,7 @@ public abstract class Pizza {
 	public String toString() {
 		StringBuffer display = new StringBuffer();
 		display.append("---- " + name + " ----\n");
+		display.append("Toppings--> \n");
 		for (int i = 0; i < toppings.size(); i++) {
 			display.append((String )toppings.get(i) + "\n");
 		}

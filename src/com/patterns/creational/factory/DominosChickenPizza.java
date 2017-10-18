@@ -9,4 +9,9 @@ public class DominosChickenPizza extends Pizza {
 		toppings.add("Onions");
 		
 	}
+	
+	@Override
+	public void bake(){
+		System.out.println("Baking with dominos thick cheesy crust");
+	}
 }

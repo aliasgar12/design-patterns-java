@@ -6,4 +6,9 @@ public class DominosCheesePizza extends Pizza {
 		name = "Dominos Cheese Pizza"; 
 		toppings.add("Grated Reggiano Cheese");
 	}
+	
+	@Override
+	public void bake(){
+		System.out.println("Baking with dominos thick crust");
+	}
 }

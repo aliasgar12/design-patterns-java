@@ -8,4 +8,9 @@ public class DominosPepperoniPizza extends Pizza{
 		toppings.add("Mushrooms");
 		toppings.add("Dominos special green peppers");
 	}
+	
+	@Override
+	public void bake(){
+		System.out.println("Baking with dominos thin crust");
+	}
 }
